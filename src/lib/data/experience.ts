@@ -1,5 +1,5 @@
-import grab1 from "@/assets/grab-1.png.asset.json";
-import apuLogo from "@/assets/apu-logo.png.asset.json";
+import grab1 from "@/assets/grab-1.png";
+import apuLogo from "@/assets/apu-logo.png";
 
 export type PipelineMedia =
   | { kind: "logo-image"; src: string; alt: string; sublabel?: string }
@@ -39,7 +39,7 @@ export const pipeline: PipelineStage[] = [
       "Specialism in Data Analytics",
     ],
     tech: ["Python", "SQL", "R", "Statistics", "Algorithms"],
-    media: { kind: "logo-image", src: apuLogo.url, alt: "Asia Pacific University", sublabel: "Asia Pacific University" },
+    media: { kind: "logo-image", src: apuLogo, alt: "Asia Pacific University", sublabel: "Asia Pacific University" },
   },
   {
     id: "preprocessing",
@@ -75,7 +75,7 @@ export const pipeline: PipelineStage[] = [
     media: {
       kind: "carousel",
       alt: "Naviin at Grab",
-      images: [grab1.url],
+      images: [grab1],
     },
   },
   {

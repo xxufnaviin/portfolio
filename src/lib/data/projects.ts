@@ -1,9 +1,9 @@
-import stockyCover from "@/assets/proj-stocky.jpg.asset.json";
-import auroraCover from "@/assets/proj-auroraflow.jpg.asset.json";
-import latelierCover from "@/assets/proj-latelier.jpg.asset.json";
-import medicalCover from "@/assets/proj-medical-cost.jpg.asset.json";
-import lythiraCover from "@/assets/proj-lythira.jpg.asset.json";
-import churnCover from "@/assets/proj-customer-churn.jpg.asset.json";
+import stockyCover from "@/assets/stocky.jpg";
+import auroraCover from "@/assets/auroraflow.jpg";
+import latelierCover from "@/assets/l-atelier.jpg";
+import medicalCover from "@/assets/medical-cost.jpg";
+import lythiraCover from "@/assets/lythira.jpg";
+import churnCover from "@/assets/customer-churn.jpg";
 
 export type Project = {
   id: string;
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     highlights: ["Architected an Agentic AI + MCP system, dockerized to ECR/ECS with PyTest-backed CI/CD."],
     repo: "https://github.com/Vaarshh17/StockyAI",
     flow: ["User", "Agent Core", "MCP Tools", "API Services", "Response"],
-    cover: stockyCover.url,
+    cover: stockyCover,
   },
   {
     id: "auroraflow",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     highlights: ["Scalable PySpark + Airflow ETL containerized with Docker and deployed on GCE with GCS storage."],
     repo: "https://github.com/xxufnaviin/etl-spark-airflow",
     flow: ["Weather API", "Airflow DAG", "PySpark", "GCS", "Analytics"],
-    cover: auroraCover.url,
+    cover: auroraCover,
   },
   {
     id: "latelier",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     ],
     repo: "https://github.com/xxufnaviin/L-Atelier",
     flow: ["YouTube", "Airflow", "Transcription", "BigQuery", "FastAPI"],
-    cover: latelierCover.url,
+    cover: latelierCover,
   },
   {
     id: "medical-cost",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     highlights: ["Tuned Decision Tree regressor with cross-validation reached R² ~0.83 on medical charges."],
     repo: "https://github.com/xxufnaviin/Medical-Cost-Prediction",
     flow: ["Data", "Preprocess", "Model", "Evaluation"],
-    cover: medicalCover.url,
+    cover: medicalCover,
   },
   {
     id: "lythira",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     highlights: ["AI assistant for disease management, health insights, and interactive medical learning."],
     repo: "https://github.com/xxufnaviin/Lythira-AI-Healthcare-Assistant",
     flow: ["User", "React UI", "Node API", "AI"],
-    cover: lythiraCover.url,
+    cover: lythiraCover,
   },
   {
     id: "customer-churn",
@@ -84,13 +84,13 @@ export const projects: Project[] = [
     highlights: ["Logistic regression on a customer churn dataset reaching 95% prediction accuracy."],
     repo: "https://github.com/xxufnaviin/Customer-Churn-Prediction",
     flow: ["Data", "Preprocess", "Logistic Regression", "Prediction"],
-    cover: churnCover.url,
+    cover: churnCover,
   },
 ];
 
-import ach2026 from "@/assets/ach-umhack2026.jpg.asset.json";
-import achDatathon from "@/assets/ach-umdatathon2025.jpg.asset.json";
-import ach2025 from "@/assets/ach-umhack2025.jpg.asset.json";
+import ach2026 from "@/assets/ach-umhack2026.jpg";
+import achDatathon from "@/assets/ach-umdatathon2025.jpg";
+import ach2025 from "@/assets/ach-umhack2025.jpg";
 import { drivePreviewUrl } from "@/lib/data/certifications";
 
 export type Achievement = {
@@ -115,7 +115,7 @@ export const achievements: Achievement[] = [
       "Built Stocky AI alongside teammates",
       "Designed the system architecture, wrote test cases, and handled automated deployments",
     ],
-    image: ach2026.url,
+    image: ach2026,
     imageKind: "img",
   },
   {
@@ -128,7 +128,7 @@ export const achievements: Achievement[] = [
       "Built ML-powered cash flow forecasting with executive dashboards",
       "Created the Power BI dashboards and pitched part of the solution",
     ],
-    image: achDatathon.url,
+    image: achDatathon,
     imageKind: "img",
   },
   {
@@ -141,7 +141,7 @@ export const achievements: Achievement[] = [
       "Built Grabby AI, an assistant designed to help Grab merchants",
       "Coordinated tasks, delegated work, and led Q&A during live pitching",
     ],
-    image: ach2025.url,
+    image: ach2025,
     imageKind: "img",
   },
   {
